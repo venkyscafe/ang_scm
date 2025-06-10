@@ -1,5 +1,5 @@
 pipeline {
-    agent { label 'ang_agent_node' }
+    agent { label 'ang_scm_agent' }
 
     tools {
         nodejs 'nodejs86' // Refers to the configured tool name in Jenkins
