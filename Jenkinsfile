@@ -1,4 +1,5 @@
 pipeline {
+
     agent { label 'ang_scm_agent' }
 
     tools {
@@ -21,11 +22,11 @@ pipeline {
             }
         }
 
-//        stage('Checkout Code') {
-//            steps {
-//               git url: 'https://github.com/venkyscafe/ang_scm.git', branch: 'main'
-//            }
-//        }
+        stage('Checkout Code') {
+            steps {
+               git url: 'https://github.com/venkyscafe/ang_scm.git', branch: 'main'
+            }
+        }
 
         stage('Install Dependencies') {
             steps {
